@@ -1,0 +1,32 @@
+{
+  "name": "repzone",
+  "version": "1.0.0",
+  "description": "(Real name TBD)   A super cool political app by Kim Hart and Alex Hubbard.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimhart/repzone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimhart/repzone/issues"
+  },
+  "homepage": "https://github.com/kimhart/repzone#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-execute": "^0.2.2",
+    "method-override": "^2.3.6",
+    "mysql": "^2.11.1",
+    "python-shell": "^0.4.0"
+  }
+}
