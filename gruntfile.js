@@ -2,12 +2,12 @@ module.exports = function (grunt) {
   grunt.initConfig({
     execute: {
       target: {
-        src: ['sp-node-mysql/app.js']
+        src: ['app.js']
       }
     },
     watch: {
       scripts: {
-        files: ['sp-node-mysql/app.js'],
+        files: ['app.js'],
         tasks: ['execute'],
       },
     }

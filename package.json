@@ -2,7 +2,7 @@
   "name": "repzone",
   "version": "1.0.0",
   "description": "(Real name TBD)   A super cool political app by Kim Hart and Alex Hubbard.",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
