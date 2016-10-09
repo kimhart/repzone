@@ -1,0 +1,27 @@
+@import 'https://fonts.googleapis.com/css?family=Arimo|Hind';
+
+body {
+  background: #FFF0;
+  font-family: 'Arimo', sans-serif;
+  width: 100%;
+}
+
+.nav-cont {
+  display: flex;
+}
+
+.logo {
+  padding: 5px;
+  text-align: left;
+}
+
+ul.nav {
+  list-style-type: none;
+  float: right;
+  margin-top: 25px;
+}
+
+ul.nav li {
+  display: inline-flex;
+  padding-left: 30px;
+}

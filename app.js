@@ -14,11 +14,12 @@ app.use(bodyParser.json());
 app.use(methodOverride());
 app.set('view engine', 'ejs');
 
-// Database
 
-// conn.exec('SELECT * FROM current_rep_bio WHERE state = "CA"').each(function(row){
-//   console.log(row);
-// });
+// Routes //
+
+app.get('/', function(req, res){
+  res.render('index');
+});
 
 
 // Python Script //
@@ -40,7 +41,7 @@ py.stdout.on('end', function(){
 
 py.stdin.write(JSON.stringify(data));
 
-app.get('/', function(req, res){
+app.get('/api/reps', function(req, res){
   conn.exec('SELECT  * FROM current_rep_bio WHERE state ="' + 
     dataString.replace('\n', '') + '"').all(function(row){
     res.json(row);
@@ -48,10 +49,8 @@ app.get('/', function(req, res){
   })
 });
 
-
 py.stdin.end();
 
-/*change*/
 
 
 
