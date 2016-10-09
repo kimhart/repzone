@@ -31,7 +31,7 @@ app.set('view engine', 'ejs');
 
 // Routes //
 
-app.get('/newyork', function(req, res){
+app.get('/', function(req, res){
   // res.render('index.ejs');
   conn.exec('SELECT * FROM current_rep_bio WHERE state = "NY"').each(function(row){
     res.json(row);

@@ -28,6 +28,7 @@
     "method-override": "^2.3.6",
     "mysql": "^2.11.1",
     "python-shell": "^0.4.0",
+    "sqli": "0.0.4",
     "sqlite3": "^3.1.6"
   }
 }
