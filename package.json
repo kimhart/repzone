@@ -27,6 +27,7 @@
     "grunt-execute": "^0.2.2",
     "method-override": "^2.3.6",
     "mysql": "^2.11.1",
-    "python-shell": "^0.4.0"
+    "python-shell": "^0.4.0",
+    "sqlite3": "^3.1.6"
   }
 }
