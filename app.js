@@ -21,8 +21,7 @@ app.set('view engine', 'ejs');
 // });
 
 
-// Python Script //
-
+// Python Script to find state from zip code//
 
 //start.js
 var spawn = require('child_process').spawn,
@@ -41,17 +40,14 @@ py.stdout.on('end', function(){
 py.stdin.write(JSON.stringify(data));
 
 app.get('/', function(req, res){
-  conn.exec('SELECT  * FROM current_rep_bio WHERE state ="' + 
+  conn.exec('SELECT  * FROM current_senate_bio WHERE state ="' + 
     dataString.replace('\n', '') + '"').all(function(row){
     res.json(row);
-    /*console.log(row)*/
   })
 });
 
 
 py.stdin.end();
-
-/*change*/
 
 
 

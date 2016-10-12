@@ -29,8 +29,6 @@ def get_senator_by_zip():
     ## Save state from zipcode
             state = x.loc[i, 'short_name'].upper()
 
-    #print state
-    #print state
     print state
 
 
